@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="CSS/formatação.css">
+</head>
+<body>
+   
+    <h1>Cadastro de Filmes</h1>
+
+    <form action="" method="post">
+    
+    <div class="componentes"><!--Espaço para título do Filme-->
+        <label class="componentes" for="titulo">Título:</label>
+        <input class="componentes" type="text" name="título" id="título">
+    </div>
+
+    <div class="componentes"><!--Espaço para escolha do genero-->
+        <label for="genero">Gênero</label>
+        <select name="genero" id="genero">
+            <option value="acao">Ação</option>
+            <option value="comedia">Comédia</option>
+            <option value="ficcao">Ficção</option>
+            <option value="terro">Terror</option>
+            <option value="suspense">Suspense</option>
+        </select>
+<div>
+
+<div>
+    <label for="ano">Ano de Lançamento</label>
+    <input type="number"    name="ano" id="ano" min="1900" max="2100" step="1" value="2023">
+
+</div>
+
+<div><!--Espaço para por a Sinopse do Filme-->
+    <label for="sinopse">Sinopse</label>
+    <textarea name="sinopse" id="sinopse" 
+        cols="30" rows="10"></textarea>
+
+
+</div>
+
+<div>
+    <button type="submit">Cadastrar</button>
+    <button type="reset">Limpar</button>
+
+
+</div>
+</body>
+</html>
